@@ -1,9 +1,9 @@
 import 'dart:math';
 import 'dart:ui';
 
-import 'package:abdullahriaz95_dot_com/models/experience.dart';
-import 'package:abdullahriaz95_dot_com/models/project.dart';
-import 'package:abdullahriaz95_dot_com/models/work.dart';
+import 'package:tagneti/models/experience.dart';
+import 'package:tagneti/models/project.dart';
+import 'package:tagneti/models/work.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Utils {

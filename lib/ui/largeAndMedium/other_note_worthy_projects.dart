@@ -1,10 +1,10 @@
-import 'package:abdullahriaz95_dot_com/ar_theme.dart';
-import 'package:abdullahriaz95_dot_com/utilities/utils.dart';
-import 'package:abdullahriaz95_dot_com/widgets/responsive.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:abdullahriaz95_dot_com/extensions/hover_extensions.dart';
+import 'package:tagneti/ar_theme.dart';
+import 'package:tagneti/extensions/hover_extensions.dart';
+import 'package:tagneti/utilities/utils.dart';
+import 'package:tagneti/widgets/responsive.dart';
 
 class OtherNoteworthyProjects extends StatefulWidget {
   @override

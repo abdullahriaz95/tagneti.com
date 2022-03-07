@@ -1,8 +1,8 @@
-import 'package:abdullahriaz95_dot_com/utilities/utils.dart';
-import 'package:abdullahriaz95_dot_com/widgets/heading.dart';
-import 'package:abdullahriaz95_dot_com/widgets/responsive.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:tagneti/utilities/utils.dart';
+import 'package:tagneti/widgets/heading.dart';
+import 'package:tagneti/widgets/responsive.dart';
 
 class AboutSection extends StatefulWidget {
   @override

@@ -1,11 +1,11 @@
-import 'package:abdullahriaz95_dot_com/ui/largeAndMedium/experience_section.dart';
-import 'package:abdullahriaz95_dot_com/ui/largeAndMedium/top_nav_bar.dart';
-import 'package:abdullahriaz95_dot_com/ui/largeAndMedium/welcome_section.dart';
-import 'package:abdullahriaz95_dot_com/ui/largeAndMedium/work_section.dart';
-import 'package:abdullahriaz95_dot_com/widgets/responsive.dart';
-import 'package:abdullahriaz95_dot_com/widgets/sliver_app_bar_custom_delegate.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:tagneti/ui/largeAndMedium/experience_section.dart';
+import 'package:tagneti/ui/largeAndMedium/top_nav_bar.dart';
+import 'package:tagneti/ui/largeAndMedium/welcome_section.dart';
+import 'package:tagneti/ui/largeAndMedium/work_section.dart';
+import 'package:tagneti/widgets/responsive.dart';
+import 'package:tagneti/widgets/sliver_app_bar_custom_delegate.dart';
 
 import 'about_section.dart';
 import 'contact_section.dart';

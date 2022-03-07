@@ -1,13 +1,13 @@
-import 'package:abdullahriaz95_dot_com/bloc/experience/experience_bloc.dart';
-import 'package:abdullahriaz95_dot_com/models/experience.dart';
-import 'package:abdullahriaz95_dot_com/ui/small/small_layout_experience_animated_bar.dart';
-import 'package:abdullahriaz95_dot_com/utilities/utils.dart';
-import 'package:abdullahriaz95_dot_com/widgets/heading.dart';
-import 'package:abdullahriaz95_dot_com/widgets/responsive.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:tagneti/bloc/experience/experience_bloc.dart';
+import 'package:tagneti/models/experience.dart';
+import 'package:tagneti/ui/small/small_layout_experience_animated_bar.dart';
+import 'package:tagneti/utilities/utils.dart';
+import 'package:tagneti/widgets/heading.dart';
+import 'package:tagneti/widgets/responsive.dart';
 
 class SmallLayoutExperienceSection extends StatefulWidget {
   @override

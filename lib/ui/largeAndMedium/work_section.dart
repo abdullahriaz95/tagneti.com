@@ -1,9 +1,9 @@
-import 'package:abdullahriaz95_dot_com/utilities/utils.dart';
-import 'package:abdullahriaz95_dot_com/widgets/heading.dart';
-import 'package:abdullahriaz95_dot_com/widgets/responsive.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tagneti/utilities/utils.dart';
+import 'package:tagneti/widgets/heading.dart';
+import 'package:tagneti/widgets/responsive.dart';
 
 import '../../ar_theme.dart';
 

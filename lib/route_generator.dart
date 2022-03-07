@@ -1,6 +1,6 @@
-import 'package:abdullahriaz95_dot_com/ui/home_page.dart';
-import 'package:abdullahriaz95_dot_com/ui/splash/splash.dart';
 import 'package:flutter/material.dart';
+import 'package:tagneti/ui/home_page.dart';
+import 'package:tagneti/ui/splash/splash.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {

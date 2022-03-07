@@ -1,8 +1,8 @@
-import 'package:abdullahriaz95_dot_com/ui/largeAndMedium/logo.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:abdullahriaz95_dot_com/bloc/scroll/scroll_bloc.dart';
+import 'package:tagneti/bloc/scroll/scroll_bloc.dart';
+import 'package:tagneti/ui/largeAndMedium/logo.dart';
 
 class SmallLayoutTopNavBar extends StatefulWidget {
   final Function scrollTo;

@@ -1,7 +1,7 @@
-import 'package:abdullahriaz95_dot_com/utilities/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tagneti/utilities/utils.dart';
 
 import '../../ar_theme.dart';
 

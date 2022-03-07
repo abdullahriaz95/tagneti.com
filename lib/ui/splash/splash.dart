@@ -1,12 +1,9 @@
 import 'dart:async';
 
-import 'package:abdullahriaz95_dot_com/ui/home_page.dart';
-import 'package:abdullahriaz95_dot_com/ui/largeAndMedium/large_layout.dart';
-import 'package:abdullahriaz95_dot_com/ui/small/small_layout.dart';
-import 'package:abdullahriaz95_dot_com/widgets/responsive.dart';
 import 'package:animate_my_text/animated_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tagneti/ui/home_page.dart';
 
 class Splash extends StatefulWidget {
   @override

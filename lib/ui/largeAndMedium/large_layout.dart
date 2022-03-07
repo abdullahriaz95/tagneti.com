@@ -1,8 +1,7 @@
-import 'package:abdullahriaz95_dot_com/ui/largeAndMedium/main_content.dart';
-import 'package:abdullahriaz95_dot_com/ui/largeAndMedium/stack_left_navigation.dart';
-import 'package:abdullahriaz95_dot_com/ui/largeAndMedium/stack_right_navigation.dart';
-
 import 'package:flutter/material.dart';
+import 'package:tagneti/ui/largeAndMedium/main_content.dart';
+import 'package:tagneti/ui/largeAndMedium/stack_left_navigation.dart';
+import 'package:tagneti/ui/largeAndMedium/stack_right_navigation.dart';
 
 class LargeAndMediumLayout extends StatefulWidget {
   @override

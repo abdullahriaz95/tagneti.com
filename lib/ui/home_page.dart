@@ -1,7 +1,6 @@
-import 'package:abdullahriaz95_dot_com/ui/small/small_layout.dart';
-import 'package:abdullahriaz95_dot_com/ui/splash/splash.dart';
-import 'package:abdullahriaz95_dot_com/widgets/responsive.dart';
 import 'package:flutter/material.dart';
+import 'package:tagneti/ui/small/small_layout.dart';
+import 'package:tagneti/widgets/responsive.dart';
 
 import 'largeAndMedium/large_layout.dart';
 

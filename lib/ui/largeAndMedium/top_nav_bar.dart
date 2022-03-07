@@ -1,7 +1,7 @@
-import 'package:abdullahriaz95_dot_com/utilities/utils.dart';
-import 'package:abdullahriaz95_dot_com/widgets/nav_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:tagneti/utilities/utils.dart';
+import 'package:tagneti/widgets/nav_item.dart';
 
 import 'logo.dart';
 

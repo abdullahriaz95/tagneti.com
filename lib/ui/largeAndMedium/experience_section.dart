@@ -1,14 +1,12 @@
-import 'package:abdullahriaz95_dot_com/ar_theme.dart';
-import 'package:abdullahriaz95_dot_com/bloc/experience/experience_bloc.dart';
-
-import 'package:abdullahriaz95_dot_com/models/experience.dart';
-import 'package:abdullahriaz95_dot_com/ui/largeAndMedium/experience_animated_bar.dart';
-import 'package:abdullahriaz95_dot_com/utilities/utils.dart';
-import 'package:abdullahriaz95_dot_com/widgets/heading.dart';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:tagneti/ar_theme.dart';
+import 'package:tagneti/bloc/experience/experience_bloc.dart';
+import 'package:tagneti/models/experience.dart';
+import 'package:tagneti/ui/largeAndMedium/experience_animated_bar.dart';
+import 'package:tagneti/utilities/utils.dart';
+import 'package:tagneti/widgets/heading.dart';
 
 class ExperienceSection extends StatefulWidget {
   @override

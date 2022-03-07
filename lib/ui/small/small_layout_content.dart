@@ -1,15 +1,15 @@
-import 'package:abdullahriaz95_dot_com/bloc/scroll/scroll_bloc.dart';
-import 'package:abdullahriaz95_dot_com/ui/largeAndMedium/contact_section.dart';
-import 'package:abdullahriaz95_dot_com/ui/small/small_layout_about_section.dart';
-import 'package:abdullahriaz95_dot_com/ui/small/small_layout_experience_section.dart';
-import 'package:abdullahriaz95_dot_com/ui/small/small_layout_navigation_stack.dart';
-import 'package:abdullahriaz95_dot_com/ui/small/small_layout_other_noteworthy_projects.dart';
-import 'package:abdullahriaz95_dot_com/ui/small/small_layout_top_nav_bar.dart';
-import 'package:abdullahriaz95_dot_com/ui/small/small_layout_welcome_section.dart';
-import 'package:abdullahriaz95_dot_com/ui/small/small_layout_work_section.dart';
-import 'package:abdullahriaz95_dot_com/widgets/sliver_app_bar_custom_delegate.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:tagneti/bloc/scroll/scroll_bloc.dart';
+import 'package:tagneti/ui/largeAndMedium/contact_section.dart';
+import 'package:tagneti/ui/small/small_layout_about_section.dart';
+import 'package:tagneti/ui/small/small_layout_experience_section.dart';
+import 'package:tagneti/ui/small/small_layout_navigation_stack.dart';
+import 'package:tagneti/ui/small/small_layout_other_noteworthy_projects.dart';
+import 'package:tagneti/ui/small/small_layout_top_nav_bar.dart';
+import 'package:tagneti/ui/small/small_layout_welcome_section.dart';
+import 'package:tagneti/ui/small/small_layout_work_section.dart';
+import 'package:tagneti/widgets/sliver_app_bar_custom_delegate.dart';
 
 class SmallLayoutContent extends StatefulWidget {
   @override

@@ -1,9 +1,9 @@
-import 'package:abdullahriaz95_dot_com/ar_theme.dart';
-import 'package:abdullahriaz95_dot_com/utilities/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:abdullahriaz95_dot_com/extensions/hover_extensions.dart';
+import 'package:tagneti/ar_theme.dart';
+import 'package:tagneti/extensions/hover_extensions.dart';
+import 'package:tagneti/utilities/utils.dart';
 
 class StackLeftNavigation extends StatefulWidget {
   @override

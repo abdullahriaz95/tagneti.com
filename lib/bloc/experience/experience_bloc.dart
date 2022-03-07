@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:abdullahriaz95_dot_com/models/experience.dart';
-import 'package:abdullahriaz95_dot_com/utilities/utils.dart';
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
+import 'package:tagneti/models/experience.dart';
+import 'package:tagneti/utilities/utils.dart';
 
 part 'experience_event.dart';
 part 'experience_state.dart';

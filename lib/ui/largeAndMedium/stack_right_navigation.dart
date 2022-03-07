@@ -1,7 +1,8 @@
-import 'package:abdullahriaz95_dot_com/ar_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:abdullahriaz95_dot_com/extensions/hover_extensions.dart';
+import 'package:tagneti/ar_theme.dart';
+import 'package:tagneti/extensions/hover_extensions.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 
 class StackRightNavigation extends StatefulWidget {
