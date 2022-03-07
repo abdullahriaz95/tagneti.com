@@ -22,9 +22,52 @@ class _ExperienceSectionState extends State<ExperienceSection> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          heading(context, '02.  ', 'Where I\'ve Worked'),
+          heading(context, '02.  ', 'Our speciality'),
           SizedBox(height: 32),
-          _experienceContent(),
+
+          Text(
+            'iOS Development',
+            style: Theme.of(context).textTheme.headline6.copyWith(
+                  fontWeight: FontWeight.w100,
+                  color: MyTheme.normalTextColor,
+                ),
+          ),
+          Text(
+            'Andoid Development',
+            style: Theme.of(context).textTheme.headline6.copyWith(
+                  fontWeight: FontWeight.w100,
+                  color: MyTheme.normalTextColor,
+                ),
+          ),
+          Text(
+            'Hybrid App Development',
+            style: Theme.of(context).textTheme.headline6.copyWith(
+                  fontWeight: FontWeight.w100,
+                  color: MyTheme.normalTextColor,
+                ),
+          ),
+          Text(
+            'Website Development',
+            style: Theme.of(context).textTheme.headline6.copyWith(
+                  fontWeight: FontWeight.w100,
+                  color: MyTheme.normalTextColor,
+                ),
+          ),
+          Text(
+            'Backend Development',
+            style: Theme.of(context).textTheme.headline6.copyWith(
+                  fontWeight: FontWeight.w100,
+                  color: MyTheme.normalTextColor,
+                ),
+          ),
+          Text(
+            'Designing UI/UX',
+            style: Theme.of(context).textTheme.headline6.copyWith(
+                  fontWeight: FontWeight.w100,
+                  color: MyTheme.normalTextColor,
+                ),
+          ),
+          // _experienceContent(),
         ],
       ),
     );
