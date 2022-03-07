@@ -23,10 +23,10 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (context) => ScrollBloc()),
       ],
       child: MaterialApp(
-        title: 'Abdullah Riaz',
+        title: 'Tagneti',
         debugShowCheckedModeBanner: false,
-        theme: MyTheme.arTheme(context),
-        initialRoute: "/splash",
+        theme: MyTheme.tagnetiTheme(context),
+        initialRoute: "/home", // TODO : change this to splash
         onGenerateRoute: RouteGenerator.generateRoute,
       ),
     );

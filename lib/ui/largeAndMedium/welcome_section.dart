@@ -1,5 +1,6 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/widgets.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../ar_theme.dart';
@@ -16,82 +17,133 @@ class _WelcomeSectionState extends State<WelcomeSection> {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        _leftPart(context),
+        _sideSpacing(context),
         _rightPart(),
+        _sideSpacing(context),
       ],
     );
   }
 
-  Flexible _rightPart() {
+  Widget _rightPart() {
     return Flexible(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            height: 100,
+            height: 80,
           ),
-          Text(
-            'Hi,  my  name  is',
-            style: GoogleFonts.ubuntu(color: Theme.of(context).accentColor),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Text(
-            'Abdullah Riaz.',
-            style: Theme.of(context).textTheme.headline1,
-          ),
-          Text(
-            'I build things for mobile.',
-            style: Theme.of(context)
-                .textTheme
-                .headline1
-                .copyWith(color: MyTheme.normalTextColor),
-          ),
-          SizedBox(
-            height: 24,
-          ),
-          Container(
-            width: 500,
-            child: Text(
-              'I\'m a Software Engineer based in Lahore, PK specializing in building (and occasionally designing) exceptional mobile applications in Flutter.',
-              style:
-                  Theme.of(context).textTheme.bodyText1.copyWith(height: 1.5),
-              textAlign: TextAlign.left,
+          Align(
+            alignment: Alignment.center,
+            child: Image.asset(
+              'assets/images/tagneti_logo.png',
+              height: 80,
+              fit: BoxFit.fitHeight,
             ),
           ),
           SizedBox(
-            height: 32,
+            height: 60,
           ),
-          OutlinedButton(
-            style: OutlinedButton.styleFrom(
-                // shadowColor: Theme.of(context).accentColor.withOpacity(0.4),
-                side: BorderSide(
-                    width: 0.8, color: Theme.of(context).accentColor),
-                padding: EdgeInsets.symmetric(horizontal: 48, vertical: 26)),
-            onPressed: () {
-              try {
-                launch(_emailLaunchUri.toString());
-              } catch (e) {
-                print('Exception - $e');
-              }
-            },
-            child: Text(
-              'Get in Touch',
-              style: TextStyle(
-                  color: Theme.of(context).accentColor,
-                  fontSize: 14,
-                  fontWeight: FontWeight.w200),
+          RichText(
+            text: TextSpan(
+              text: 'We are ',
+              style: _getStyle(false),
+              children: <TextSpan>[
+                TextSpan(
+                  text: 'Tagneti',
+                  style: _getStyle(true),
+                ),
+                TextSpan(
+                  text:
+                      '. Your technology partner for innovative and impactful digital solutions.',
+                  style: _getStyle(false),
+                ),
+                TextSpan(
+                  text:
+                      '\n\nWe proactively consult, design, develop and scale robust web, mobile and custom software solutions, that fuel innovation and deliver ',
+                  style: _getStyle(false),
+                ),
+                TextSpan(
+                  text: 'digital success',
+                  style: _getStyle(true),
+                ),
+                TextSpan(
+                  text: '!',
+                  style: _getStyle(false),
+                ),
+                TextSpan(
+                  text: '\n\nOur ',
+                  style: _getStyle(false),
+                ),
+                TextSpan(
+                  text: 'services',
+                  style: _getStyle(true),
+                ),
+                TextSpan(
+                  text:
+                      ' include Mobile App Solutions, Web Design & Development, UX/UI Design and Custom Software Development.',
+                  style: _getStyle(false),
+                ),
+                TextSpan(
+                  text: '\n\nOur work does the talking. We have ',
+                  style: _getStyle(false),
+                ),
+                TextSpan(
+                  text: 'clients',
+                  style: _getStyle(true),
+                ),
+                TextSpan(
+                  text:
+                      ' in 10+ countries with over 25+ projects completed successfully. We have the honour of having 100% positive feedback from our clients.\n\n',
+                  style: _getStyle(false),
+                ),
+                TextSpan(
+                    text: 'Contact',
+                    style: _getStyle(true, underline: true),
+                    recognizer: TapGestureRecognizer()
+                      ..onTap = () {
+                        try {
+                          launch(_emailLaunchUri.toString());
+                        } catch (e) {
+                          print('Exception - $e');
+                        }
+                      }),
+                TextSpan(
+                  text: ' us to start a project.',
+                  style: _getStyle(false),
+                ),
+              ],
             ),
           ),
+          SizedBox(height: 32),
+          // OutlinedButton(
+          //   style: OutlinedButton.styleFrom(
+          //       // shadowColor: Theme.of(context).accentColor.withOpacity(0.4),
+          //       side: BorderSide(
+          //           width: 0.8, color: Theme.of(context).accentColor),
+          //       padding: EdgeInsets.symmetric(horizontal: 48, vertical: 26)),
+          //   onPressed: () {
+          //     try {
+          //       launch(_emailLaunchUri.toString());
+          //     } catch (e) {
+          //       print('Exception - $e');
+          //     }
+          //   },
+          //   child: Text(
+          //     'Get in Touch',
+          //     style: TextStyle(
+          //         color: Theme.of(context).accentColor,
+          //         fontSize: 14,
+          //         fontWeight: FontWeight.w200),
+          //   ),
+          // ),
         ],
       ),
-      flex: 6,
+      flex: 10,
     );
   }
 
-  Flexible _leftPart(BuildContext context) {
+  Flexible _sideSpacing(BuildContext context) {
     return Flexible(
       child: Container(),
       flex: 1,
@@ -103,4 +155,15 @@ class _WelcomeSectionState extends State<WelcomeSection> {
     path: 'abdullahriaz95@gmail.com',
     queryParameters: {'subject': 'Inquiry From abdullahriaz95.com'},
   );
+
+  _getStyle(bool isKeyWord, {bool underline = false}) {
+    return Theme.of(context).textTheme.headline5?.copyWith(
+          fontWeight: isKeyWord ? FontWeight.bold : FontWeight.w100,
+          color: isKeyWord
+              ? MyTheme.highlightedTextColor
+              : MyTheme.normalTextColor,
+          decoration:
+              underline ? TextDecoration.underline : TextDecoration.none,
+        );
+  }
 }

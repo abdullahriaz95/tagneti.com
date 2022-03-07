@@ -71,70 +71,58 @@ class _MainLargeMediumContentState extends State<MainLargeMediumContent> {
     return CustomScrollView(
       controller: _scrollController,
       slivers: [
-        SliverPersistentHeader(
-          floating: true,
-          delegate: SliverAppBarDelegate(
-            minHeight: 100,
-            maxHeight: 100,
-            child: TopNavBar(_scrollToWidget),
-          ),
-        ),
+        // SliverPersistentHeader(
+        //   floating: true,
+        //   delegate: SliverAppBarDelegate(
+        //     minHeight: 100,
+        //     maxHeight: 100,
+        //     child: TopNavBar(_scrollToWidget),
+        //   ),
+        // ),
         SliverList(
           delegate: SliverChildListDelegate(
             [
               Container(key: _welcomeKey, child: WelcomeSection()),
-              Row(
-                children: [
-                  Flexible(
-                    child: Container(),
-                    flex: 1,
-                  ),
-                  Flexible(
-                    flex: ResponsiveWidget.isMediumScreen(context) ? 5 : 4,
-                    child: Container(
-                      child: Column(
-                        children: [
-                          SizedBox(
-                            height: 200,
-                          ),
-                          Container(key: _aboutKey, child: AboutSection()),
-                          SizedBox(
-                            height: 200,
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                                left: ResponsiveWidget.isMediumScreen(context)
-                                    ? 0
-                                    : 60),
-                            child: Container(
-                                key: _experienceKey,
-                                child: ExperienceSection()),
-                          ),
-                          SizedBox(
-                            height: 200,
-                          ),
-                          Container(key: _workKey, child: WorkSection()),
-                          SizedBox(
-                            height: 200,
-                          ),
-                          OtherNoteworthyProjects(),
-                          SizedBox(
-                            height: 200,
-                          ),
-                          Container(key: _contactKey, child: ContactSection()),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Flexible(
-                    child: Container(),
-                    flex: 1,
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 32,
-              ),
+              // Row(
+              //   children: [
+              //     Flexible(
+              //       child: Container(),
+              //       flex: 1,
+              //     ),
+              //     Flexible(
+              //       flex: ResponsiveWidget.isMediumScreen(context) ? 5 : 4,
+              //       child: Container(
+              //         child: Column(
+              //           children: [
+              //             SizedBox(height: 200),
+              //             Container(key: _aboutKey, child: AboutSection()),
+              //             SizedBox(height: 200),
+              //             Padding(
+              //               padding: EdgeInsets.only(
+              //                   left: ResponsiveWidget.isMediumScreen(context)
+              //                       ? 0
+              //                       : 60),
+              //               child: Container(
+              //                   key: _experienceKey,
+              //                   child: ExperienceSection()),
+              //             ),
+              //             SizedBox(height: 200),
+              //             Container(key: _workKey, child: WorkSection()),
+              //             SizedBox(height: 200),
+              //             OtherNoteworthyProjects(),
+              //             SizedBox(height: 200),
+              //             Container(key: _contactKey, child: ContactSection()),
+              //           ],
+              //         ),
+              //       ),
+              //     ),
+              //     Flexible(
+              //       child: Container(),
+              //       flex: 1,
+              //     ),
+              //   ],
+              // ),
+              SizedBox(height: 32),
             ],
           ),
         ),

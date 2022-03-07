@@ -6,17 +6,17 @@ class MyTheme {
   static Duration textFirstEntryAnimationDuration = Duration(milliseconds: 500);
   static Duration textFirstEntryDuration = Duration(milliseconds: 50);
   static Duration lineShowDelay = Duration(milliseconds: 1000);
-  static Color highlightedTextColor = Color(0xFFCCD6F6);
-  static Color normalTextColor = Color(0xFF8892B0);
-  static Color selectedListColor = Color(0xFF112240);
+  static Color highlightedTextColor = Colors.redAccent;
+  static Color normalTextColor = Color(0xFF0A192F);
+  static Color selectedListColor = Color(0xFF0A192F);
 
-  static ThemeData arTheme(BuildContext context) {
+  static ThemeData tagnetiTheme(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
 
     return ThemeData(
       brightness: Brightness.light,
-      primaryColor: Color(0xFF0A192F),
-      accentColor: Color(0xFF64FFD9),
+      primaryColor: Colors.white,
+      accentColor: highlightedTextColor,
       //iconTheme: IconThemeData(color: Colors.white, size: 20.0),//filters
       //buttonColor: Colors.red,
 
@@ -33,13 +33,15 @@ class MyTheme {
 
       textTheme: GoogleFonts.montserratTextTheme(textTheme).copyWith(
         headline1: GoogleFonts.montserrat(
-            textStyle: TextStyle(
-                color: highlightedTextColor,
-                fontSize: 70,
-                fontWeight: FontWeight.w700)),
+          textStyle: TextStyle(
+            color: highlightedTextColor,
+            fontSize: 70,
+          ),
+        ),
         headline2: GoogleFonts.montserrat(
-            textStyle:
-                TextStyle(color: Colors.white, fontWeight: FontWeight.w800)),
+            textStyle: TextStyle(
+          color: Colors.white,
+        )),
         headline3: GoogleFonts.montserrat(
             textStyle:
                 TextStyle(color: Colors.white, fontWeight: FontWeight.w800)),

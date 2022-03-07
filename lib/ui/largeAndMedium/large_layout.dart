@@ -14,16 +14,16 @@ class _LargeAndMediumLayoutState extends State<LargeAndMediumLayout> {
     return Stack(
       children: [
         MainLargeMediumContent(),
-        Positioned(
-          child: StackLeftNavigation(),
-          left: 40,
-          bottom: 0,
-        ),
-        Positioned(
-          child: StackRightNavigation(),
-          right: 40,
-          bottom: 0,
-        ),
+        // Positioned(
+        //   child: StackLeftNavigation(),
+        //   left: 40,
+        //   bottom: 0,
+        // ),
+        // Positioned(
+        //   child: StackRightNavigation(),
+        //   right: 40,
+        //   bottom: 0,
+        // ),
       ],
     );
   }
